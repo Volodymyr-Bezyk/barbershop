@@ -1,0 +1,43 @@
+.features__top-text {
+  @include text(11px, 15px);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @include line(#303030);
+  }
+}
+.features__title {
+  @include text(42px, 49px);
+  margin-bottom: 20px;
+}
+.features__text {
+  @include text(18px, 30px);
+  margin-bottom: 44px;
+}
+
+.achievement {
+  display: flex;
+  flex-wrap: wrap;
+}
+.achievement__item {
+  flex-basis: calc((100% - 62px - 30px) / 2);
+  padding: 20px 36px;
+  background-color: #f7f7f7;
+}
+.achievement__value {
+  @include text(42px, 57px);
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.achievement__text {
+  @include text(11px, 15px);
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  color: #303030;
+}

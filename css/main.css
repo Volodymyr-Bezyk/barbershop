@@ -443,4 +443,62 @@ body {
   font-size: 12px;
   line-height: 1.33333;
 }
+
+.features__top-text {
+  font-size: 11px;
+  line-height: 1.36364;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.features__top-text::before {
+  content: "";
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.features__title {
+  font-size: 42px;
+  line-height: 1.16667;
+  margin-bottom: 20px;
+}
+
+.features__text {
+  font-size: 18px;
+  line-height: 1.66667;
+  margin-bottom: 44px;
+}
+
+.achievement {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achievement__item {
+  flex-basis: calc((100% - 62px - 30px) / 2);
+  padding: 20px 36px;
+  background-color: #f7f7f7;
+}
+
+.achievement__value {
+  font-size: 42px;
+  line-height: 1.35714;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.achievement__text {
+  font-size: 11px;
+  line-height: 1.36364;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  color: #303030;
+}
 /*# sourceMappingURL=main.css.map */
