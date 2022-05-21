@@ -1,0 +1,10 @@
+$colors: (
+  "title-color-primary": #ffffff,
+  "title-color-sec": #303030,
+  "text-color-primary": #555555,
+  "text-color-sec": #9da4bd,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

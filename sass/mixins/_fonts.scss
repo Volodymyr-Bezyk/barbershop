@@ -1,0 +1,4 @@
+@mixin text($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh / $fs;
+}

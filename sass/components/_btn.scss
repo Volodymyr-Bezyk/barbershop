@@ -1,0 +1,30 @@
+.btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #303030;
+  background-color: transparent;
+}
+
+.btn--dark {
+  display: block;
+  margin: 0 auto;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: transparent;
+}

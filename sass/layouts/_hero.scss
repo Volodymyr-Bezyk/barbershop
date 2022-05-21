@@ -1,0 +1,54 @@
+.hero {
+  margin: 0 auto;
+  padding-top: 208px;
+  padding-bottom: 183px;
+  max-width: 480px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../../img/hero/hero-mob-480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../../img/hero/hero-mob-960.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../../img/hero/hero-mob-1440.jpg);
+  }
+}
+.hero__top-text {
+  @include text(11px, 15px);
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    @include line;
+  }
+}
+.hero__title {
+  @include text(48px, 56px);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.hero__text {
+  @include text(16px, 26px);
+  max-width: 306px;
+  margin: 0;
+}
