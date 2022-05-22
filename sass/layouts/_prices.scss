@@ -2,33 +2,20 @@
   max-width: 480px;
   margin: 0 auto;
 
-  background-image: linear-gradient(
-      rgba(17, 19, 25, 0.8),
-      rgba(17, 19, 25, 0.8)
-    ),
+  background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
     url(../../img/section-bg/section-bg-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        rgba(17, 19, 25, 0.8),
-        rgba(17, 19, 25, 0.8)
-      ),
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
       url(../../img/section-bg/section-bg-mob-960.jpg);
   }
 
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    background-image: linear-gradient(
-        rgba(17, 19, 25, 0.8),
-        rgba(17, 19, 25, 0.8)
-      ),
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
       url(../../img/section-bg/section-bg-mob-1440.jpg);
   }
 }
@@ -45,36 +32,29 @@
   @include text(42px, 49px);
   margin-bottom: 44px;
 }
-.prices__holder {
-  display: flex;
-  justify-content: space-between;
+.prices__list {
   margin-bottom: 50px;
+}
+.list-price {
   padding: 30px;
-
-  background-image: linear-gradient(
-    180deg,
-    #171a24 0%,
-    rgba(23, 26, 36, 0.2) 100%
-  );
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.prices__list-name {
-  flex-grow: 1;
-}
-.prices__list-value {
-  margin-left: 6px;
-}
-.list-name__item,
-.list-value__item {
+.list-price__item {
+  margin-bottom: 20px;
   @include text(14px, 30px);
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 20px;
+}
+.list-price__item::after {
+  @include line(rgba(157, 164, 189, 0.12), 0, 0);
+  flex-grow: 1;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
-.list-name__item::after {
-  @include line(rgba(157, 164, 189, 0.12), 0);
-  margin-left: 6px;
-  flex-grow: 1;
+.list-price__value {
+  order: 1;
 }
 .prices__btn {
   @include text(12px, 16px);

@@ -1,0 +1,64 @@
+.masters {
+  background-color: #f7f7f7;
+}
+.masters__top-text {
+  @include text(11px, 15px);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    @include line(#303030);
+  }
+}
+.masters__title {
+  @include text(42px, 49px);
+  margin-bottom: 44px;
+}
+.masters__item {
+  margin-bottom: 64px;
+}
+.masters__inner {
+  padding-top: 30px;
+  text-align: center;
+}
+.masters__name {
+  margin-bottom: 8px;
+  @include text(18px, 25px);
+
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.masters__position {
+  margin-bottom: 30px;
+  @include text(14px, 19px);
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+.soc-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+.soc-list__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.soc-list__icon {
+  fill: #303030;
+  transition: fill 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  .soc-list__link:hover &,
+  .soc-list__link:focus & {
+    fill: #ff6c00;
+  }
+}

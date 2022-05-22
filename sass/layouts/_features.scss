@@ -20,23 +20,56 @@
 .achievement {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
+.achievement__list {
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 377px) {
+    margin-bottom: 0;
+    &:last-child {
+      padding-top: 35px;
+    }
+  }
+}
+
 .achievement__item {
-  flex-basis: calc((100% - 62px - 30px) / 2);
-  padding: 20px 36px;
+  padding: 20px 32px;
+  height: 133px;
   background-color: #f7f7f7;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
+
 .achievement__value {
   @include text(42px, 57px);
-  display: block;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
-  text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+
+  &::after {
+    content: '';
+    margin-left: 2px;
+    background-image: url(../../img/svg-icons/plus.svg);
+    width: 13px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
 .achievement__text {
   @include text(11px, 15px);
   display: block;
+  width: 100%;
   font-weight: 600;
   text-align: center;
   color: #303030;
