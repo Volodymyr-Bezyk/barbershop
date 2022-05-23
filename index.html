@@ -94,8 +94,7 @@
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
-        <div class="achievement">
-          <ul class="features__list achievement__list">
+      <ul class="features__list achievement__list">
           <li class="achievement__item">
             <b class="achievement__value">600</b
             ><span class="achievement__text">Довольных клиентов в день</span>
@@ -106,9 +105,7 @@
               >Наград за отличный сервис</span
             >
           </li>
-        </ul>
-        <ul class="features__list achievement__list">
-                    <li class="achievement__item">
+          <li class="achievement__item">
             <b class="achievement__value">20</b
             ><span class="achievement__text">Лучших мастеров Киева</span>
           </li>
@@ -117,7 +114,6 @@
             ><span class="achievement__text">Подарков постоянным клиентам</span>
           </li>
         </ul>
-</div>
       </div>
     </section>
 
@@ -250,5 +246,122 @@
       </div>
     </section>
     
+    <!-- GALLERY -->
+    <section class="gallery section"> 
+      <div class="container">
+          <p class="gallery__top-text top-text--dark">На латинском языке “барба” означает “борода”</p>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <picture>
+                <source srcset="./img/gallery/gallery-mob-1-1254.webp 1254w,
+                ./img/gallery/gallery-mob-1-836.webp 836w, 
+                ./img/gallery/gallery-mob-1-418.webp 418w"
+                media="(max-width:480px)">
+
+                <img srcset="./img/gallery/gallery-mob-1-418.jpg 418w,
+                ./img/gallery/gallery-mob-1-836.jpg 836w,
+                ./img/gallery/gallery-mob-1-1254.jpg 1254w, "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                src="./img/gallery/gallery-mob-1-418.jpg" alt="Барбер стрижет человека">
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source srcset="./img/gallery/gallery-mob-2-1254.webp 1254w,
+                ./img/gallery/gallery-mob-2-836.webp 836w, 
+                ./img/gallery/gallery-mob-2-418.webp 418w"
+                media="(max-width:480px)">
+
+                <img srcset="./img/gallery/gallery-mob-2-418.jpg 418w,
+                ./img/gallery/gallery-mob-2-836.jpg 836w,
+                ./img/gallery/gallery-mob-2-1254.jpg 1254w, "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                src="./img/gallery/gallery-mob-2-418.jpg" alt="Барбер бреет человека">
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source srcset="./img/gallery/gallery-mob-3-1254.webp 1254w,
+                ./img/gallery/gallery-mob-3-836.webp 836w, 
+                ./img/gallery/gallery-mob-3-418.webp 418w"
+                media="(max-width:480px)">
+
+                <img srcset="./img/gallery/gallery-mob-3-418.jpg 418w,
+                ./img/gallery/gallery-mob-3-836.jpg 836w,
+                ./img/gallery/gallery-mob-3-1254.jpg 1254w, "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                src="./img/gallery/gallery-mob-3-418.jpg" alt="Барбер вытирает лицо человека">
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source srcset="./img/gallery/gallery-mob-4-1254.webp 1254w,
+                ./img/gallery/gallery-mob-4-836.webp 836w, 
+                ./img/gallery/gallery-mob-4-418.webp 418w"
+                media="(max-width:480px)">
+
+                <img srcset="./img/gallery/gallery-mob-4-418.jpg 418w,
+                ./img/gallery/gallery-mob-4-836.jpg 836w,
+                ./img/gallery/gallery-mob-4-1254.jpg 1254w, "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                src="./img/gallery/gallery-mob-4-418.jpg" alt="Барбер бреет человека">
+              </picture>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      
+
+        <!-- BOOKING -->
+        <section class="booking section">
+          <div class="container">
+    <h2 class="title booking__title">Онлайн-запись</h2>
+    <form class="booking__form">
+      <label class="booking__label">
+        <input class="booking__input" type="text" name="name" required>
+        <span class="booking__text">Имя</span>
+      </label>
+      <label class="booking__label">
+        <input class="booking__input" type="tel" name="name" required>
+        <span class="booking__text">Телефон</span>
+      </label>
+      <label class="booking__label">
+        <textarea class="booking__input" name="message" id=""></textarea>
+        <span class="booking__text">сообщение</span>
+      </label>
+    </form>
+    <button class="btn--dark booking__btn" type="button">отправить</button>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts section">
+  <div class="container">
+  <h2 class="title contacts__title">Контакты</h2>
+  <address class="contacts__address">
+    <ul class="contacts__list">
+      <li class="contacts__item"><a class="contacts__link text" href=""><svg class="contacts__icon" width="24" height="24">
+        <use href="./img/icons.svg#map"></use>
+      </svg>ул. Васильковая, 7А, Киев, 08132</a></li>
+      <li class="contacts__item"><a class="contacts__link text" href="tel:+380441111111"><svg class="contacts__icon" width="24" height="24">
+        <use href="./img/icons.svg#phone"></use>
+      </svg>+38 044 111 11 11</a></li>
+      <li class="contacts__item"><a class="contacts__link text" href="mailto:barbershop@email.com"><svg class="contacts__icon" width="24" height="24">
+        <use href="./img/icons.svg#mail"></use>
+      </svg>barbershop@email.com</a></li>
+    </ul>
+  </address>
+  <p class="top-text contacts__top-text">время работы</p>
+  <p class="text contacts__text">Ежедневно с 9:00 до 22:00</p>
+  </div>
+</section>
+
+      
+    </footer>
+
+
   </body>
 </html>

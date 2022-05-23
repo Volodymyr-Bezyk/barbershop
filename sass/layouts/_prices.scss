@@ -21,8 +21,7 @@
 }
 .prices__top-text {
   @include text(11px, 15px);
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   margin-bottom: 20px;
   &::before {
     @include line;

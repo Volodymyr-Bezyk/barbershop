@@ -1,0 +1,13 @@
+.gallery__top-text {
+  @include text(11px, 21px);
+  margin-bottom: 44px;
+  display: flex;
+
+  &::before {
+    @include line(#303030);
+    margin-top: 10px;
+  }
+}
+.gallery__item:not(:last-child) {
+  margin-bottom: 30px;
+}

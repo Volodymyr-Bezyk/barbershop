@@ -1,7 +1,9 @@
 @mixin line($color: rgba(157, 164, 189, 0.6), $mr: 20px, $width: 60px) {
-  content: "";
+  content: '';
   margin-right: $mr;
   width: $width;
   height: 1px;
   background-color: $color;
+  flex-shrink: 0;
+  margin-top: 7px;
 }

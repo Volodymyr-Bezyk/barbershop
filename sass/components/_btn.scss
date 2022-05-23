@@ -1,4 +1,7 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   padding: 12px 20px;
@@ -10,10 +13,19 @@
 
   color: #303030;
   background-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  &:hover,
+  &:focus {
+    background-color: #ff6c00;
+  }
 }
 
 .btn--dark {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 
   border: 1px solid #ff6c00;
@@ -27,4 +39,11 @@
 
   color: #ffffff;
   background-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  &:hover,
+  &:focus {
+    background-color: #ff6c00;
+  }
 }
