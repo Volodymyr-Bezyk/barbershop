@@ -35,6 +35,9 @@
     border-bottom: 1px solid #ffffff;
   }
 }
+.booking__input:not(:placeholder-shown) + .booking__text {
+  transform: translateY(-20px);
+}
 .booking__text {
   position: absolute;
   left: 0;

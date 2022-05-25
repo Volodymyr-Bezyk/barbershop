@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Barbershop</title>
   </head>
-  <body>
+  <body  data-scroll>
     <!-- HEADER -->
     <header class="header">
       <div class="container">
@@ -16,14 +16,40 @@
             <use href="./img/icons.svg#logo"></use>
           </svg>
         </a>
-        <button type="button" class="header__btn">
-          <svg width="40" height="40">
+
+
+        <div class="mobile" data-menu >
+          <div class="mobile__front">
+          <button type="button" class="mobile-btn" aria-label="Открытие мобильного меню" aria-controls="menu" data-menu-open>
+          <svg class="mobile__icon" width="40" height="40">
             <use href="./img/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
-    </header>
+        <div class="mobile__back">
+          <button type="button" class="mobile-btn--back" aria-label="Закрытие мобильного меню" aria-controls="menu-close" data-menu-close>
+          <svg class="mobile__icon" width="40" height="40">
+            <use href="./img/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile__list">
+          <li class="mobile__item"><a href="" class="mobile__link">О нас</a></li>
+          <li class="mobile__item"><a href="" class="mobile__link">Услуги и цены</a></li>
+          <li class="mobile__item"><a href="" class="mobile__link">Мастера</a></li>
+          <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+        </ul>
+        <a href="tel:+380441111111" class="mobile__connect">+38 044 111 1 1 11</a>
+        <button class="btn mobile__booking" type="button">онлайн-запись</button>
+        <ul class="mobile__soc mob-soc">
+          <li class="mob-soc__item"><a href="" class="mob-soc__link">Instagram</a></li>
+          <li class="mob-soc__item"><a href="" class="mob-soc__link">Youtube</a></li>
+        </ul>
+        </div>
+        </div>
 
+      </div>
+    </header> 
+    
     <!-- HERO -->
     <section class="hero">
       <div class="container">
@@ -52,7 +78,7 @@
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </p>
-        <button type="button" class="btn about__btn">онлайн-запись</button>
+        <button type="button" class="btn about__btn" data-modal-open>онлайн-запись</button>
       </div>
     </section>
 
@@ -75,7 +101,7 @@
             <li class="list-price__item text"><span class="list-price__name">Камуфлирование седины</span><span class="list-price__value">от 200 грн.</span></li>
           </ul>
 
-        <button type="button" class="btn--dark prices__btn">
+        <button type="button" class="btn--dark prices__btn" >
           онлайн-запись
         </button>
       </div>
@@ -321,19 +347,19 @@
     <h2 class="title booking__title">Онлайн-запись</h2>
     <form class="booking__form">
       <label class="booking__label">
-        <input class="booking__input" type="text" name="name" required>
+        <input class="booking__input" type="text" name="name" placeholder=" " required>
         <span class="booking__text">Имя</span>
       </label>
       <label class="booking__label">
-        <input class="booking__input" type="tel" name="name" required>
+        <input class="booking__input" type="tel" name="name" placeholder=" " required>
         <span class="booking__text">Телефон</span>
       </label>
       <label class="booking__label">
-        <textarea class="booking__input" name="message" id=""></textarea>
+        <textarea class="booking__input" name="message" placeholder=" "></textarea>
         <span class="booking__text">сообщение</span>
       </label>
     </form>
-    <button class="btn--dark booking__btn" type="button">отправить</button>
+    <button class="btn--dark booking__btn" type="submit">отправить</button>
     </div>
 </section>
 
@@ -359,9 +385,59 @@
   </div>
 </section>
 
-      
+      <!-- FOOTER-SOC -->
+      <section class="footer-soc">
+        <div class="container">
+          <ul class="footer-soc__list">
+            <li class="footer-soc__item"><a href="" class="footer-soc__link">Instagram</a></li>
+            <li class="footer-soc__item"><a href="" class="footer-soc__link">Youtube</a></li>
+          </ul>
+          <p class="footer-soc__text">&copy Copyright 2020</p>
+        </div>
+      </section>
     </footer>
 
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn--cross" type="button" data-modal-close>
+          <svg class="modal__cross" width="40" height="40">
+          <use href="./img/icons.svg#cross"></use>
+        </svg></button>
+        <h2 class="title--dark modal__title">Заполните форму онлайн-записи</h2>
+        <form class="modal__form">
+          <label class="modal__label">
+            <input type="text" class="modal__input" name="name" placeholder=" ">
+            <span class="modal__text">Имя</span>
+          </label>
+          <label class="modal__label">
+            <input type="text" class="modal__input" name="tel" placeholder=" ">
+            <span class="modal__text">Телефон</span>
+          </label>
+          <label class="modal__label">
+            <input type="text" class="modal__input" name="email" placeholder=" ">
+            <span class="modal__text">Почта</span>
+          </label>
+          <label class="modal__label">
+            <textarea name="comment" placeholder=" " ></textarea>
+            <span class="modal__text">Комментарий</span>
+          </label>
+        </form>
+        <label class="policy">
+          <input class="policy__box visually-hidden" type="checkbox" name="check">
+          <span class="policy__check">
+            <span class="policy__sign"></span>
+          </span>
+          <p class="policy__text">Соглашаюсь получать новости согласно 
+            <a href="" class="policy__link">Условий договора</a>
+          </p>
+        </label>
+        <button class="btn modal__btn" type="submit">Записаться</button>
 
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

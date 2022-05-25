@@ -1,0 +1,9 @@
+.mobile.is-rotate {
+  .mobile__front {
+    transform: rotateY(180deg);
+  }
+  .mobile__back {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}

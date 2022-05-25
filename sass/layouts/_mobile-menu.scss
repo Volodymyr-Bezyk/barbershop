@@ -1,0 +1,130 @@
+.mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70vw;
+  max-width: 347px;
+  transform-style: preserve-3d;
+
+  &__front {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 347px;
+    padding-top: 48px;
+    padding-right: 31px;
+    backface-visibility: hidden;
+    background-color: transparent;
+    transform: rotateY(0deg);
+    transition: transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 347px;
+    padding-top: 48px;
+    padding-left: 50px;
+    padding-right: 31px;
+    backface-visibility: hidden;
+    background-color: #ffffff;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
+      -1px 0px 3px rgba(0, 0, 0, 0.16);
+    transform: rotateY(180deg);
+    opacity: 0.2;
+    transition: transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+      opacity 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+}
+.mobile__list {
+  margin-bottom: 64px;
+}
+.mobile__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile__link {
+  @include text(18px, 25px);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+.mobile__connect {
+  margin-bottom: 24px;
+  display: block;
+  @include text(18px, 25px);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+.mobile__booking {
+  display: block;
+  margin-bottom: 64px;
+  @include text(12px, 16px);
+}
+
+.mob-soc__item {
+  display: flex;
+
+  &::before {
+    @include line(#303030, 40px);
+    margin-top: 9px;
+  }
+}
+
+.mob-soc__item:not(:first-child) {
+  margin-top: 24px;
+
+  &::before {
+    @include line(transparent, 40px);
+  }
+}
+.mob-soc__link {
+  @include text(14px, 19px);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+.mobile__icon {
+  fill: #303030;
+  transition: fill 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  .mobile__front & {
+    fill: #ffffff;
+  }
+  .mobile-btn--back:hover &,
+  .mobile-btn--back:focus & {
+    fill: #ff6c00;
+  }
+  .mobile-btn:hover &,
+  .mobile-btn:focus & {
+    fill: #ff6c00;
+  }
+}

@@ -3,17 +3,20 @@
 @import './utils/reset';
 @import './utils/img';
 @import './utils/visually-hidden';
+@import './utils/is-rotate';
 @import './base/body';
 @import './base/container';
 @import './base/section';
 @import './utils/variables';
 @import './components/btn';
+@import './components/mobile-btn';
 @import './components/title';
 @import './components/top-text';
 @import './components/text';
 @import './mixins/fonts';
 @import './mixins/line';
 @import './layouts/header';
+@import './layouts/mobile-menu';
 @import './layouts/hero';
 @import './layouts/about';
 @import './layouts/prices';
@@ -23,3 +26,5 @@
 @import './layouts/footer';
 @import './layouts/booking';
 @import './layouts/contacts';
+@import './layouts/footer-soc';
+@import './layouts/backdrop';
