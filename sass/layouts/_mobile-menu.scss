@@ -6,12 +6,13 @@
   width: 70vw;
   max-width: 347px;
   transform-style: preserve-3d;
+  overflow: auto;
 
   &__front {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: auto;
     width: 70vw;
     max-width: 347px;
     padding-top: 48px;
@@ -26,7 +27,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: auto;
     width: 70vw;
     max-width: 347px;
     padding-top: 48px;
