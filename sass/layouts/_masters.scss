@@ -2,6 +2,16 @@
   margin: 0 auto;
   max-width: 480px;
   background-color: #f7f7f7;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  .container {
+    @include tablet {
+      max-width: 450px;
+    }
+  }
 }
 .masters__top-text {
   @include text(11px, 15px);
@@ -16,7 +26,7 @@
   @include text(42px, 49px);
   margin-bottom: 44px;
 }
-.masters__item {
+.masters__item:not(:last-child) {
   margin-bottom: 64px;
 }
 .masters__inner {
@@ -61,5 +71,12 @@
   .soc-list__link:hover &,
   .soc-list__link:focus & {
     fill: #ff6c00;
+  }
+}
+
+.masters__img {
+  @include tablet {
+    // max-width: 450px;
+    // margin: 0 auto;
   }
 }

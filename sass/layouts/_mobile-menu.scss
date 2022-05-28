@@ -8,6 +8,10 @@
   transform-style: preserve-3d;
   overflow: auto;
 
+  @include tablet {
+    display: none;
+  }
+
   &__front {
     position: absolute;
     top: 0;

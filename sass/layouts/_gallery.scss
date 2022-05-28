@@ -3,11 +3,34 @@
   margin-bottom: 44px;
   display: flex;
 
+  @include tablet {
+    @include text(11px, 15px);
+  }
+
   &::before {
     @include line(#303030);
     margin-top: 10px;
+
+    @include tablet {
+      @include line(null, null, null, 7px);
+    }
+  }
+}
+.gallery__list {
+  @include tablet {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .gallery__item:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+.gallery__item {
+  @include tablet {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }

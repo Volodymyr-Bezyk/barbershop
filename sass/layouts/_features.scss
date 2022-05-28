@@ -10,15 +10,31 @@
 .features__title {
   @include text(42px, 49px);
   margin-bottom: 20px;
+
+  @include tablet {
+    max-width: 420px;
+    margin-left: 0;
+  }
 }
 .features__text {
   @include text(18px, 30px);
   margin-bottom: 44px;
+
+  @include tablet {
+    max-width: 500px;
+    margin-left: 0;
+  }
 }
 .achievement__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include tablet {
+    max-width: 450px;
+    margin: 0;
+    margin-left: auto;
+  }
 }
 .achievement__item {
   flex-basis: calc((100% - 30px) / 2);
@@ -38,6 +54,9 @@
   }
   &:nth-child(2) {
     margin-top: 35px;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -23,3 +23,26 @@
 .about__btn {
   @include text(12px, 16px);
 }
+.about__holder {
+  @include tablet {
+    display: flex;
+  }
+}
+.about__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.about__item {
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.about__desc {
+  @include tablet {
+    margin-left: 30px;
+    max-width: 330px;
+  }
+}

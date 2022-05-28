@@ -4,12 +4,31 @@
   padding-bottom: 44px;
   background-color: #f7f7f7;
   max-width: 480px;
+
+  @include tablet {
+    max-width: 768px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .container {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 .footer-soc__list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 
   &::before {
     @include line(#303030);
@@ -20,6 +39,7 @@
   margin-left: 40px;
 }
 .footer-soc__link {
+  display: block;
   @include text(11px, 15px);
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -31,4 +51,8 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   color: #9da4bd;
+
+  @include tablet {
+    margin: 0;
+  }
 }

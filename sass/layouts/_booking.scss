@@ -2,20 +2,47 @@
   margin: 0 auto;
   max-width: 480px;
   background-color: #191c26;
+
+  @include tablet {
+    max-width: 768px;
+  }
 }
 .booking__title {
   margin-bottom: 44px;
   @include text(42px, 49px);
   text-align: center;
+
+  @include tablet {
+    text-align-last: left;
+  }
+}
+.booking__wrap {
+  @include tablet {
+    display: flex;
+  }
 }
 .booking__label {
   position: relative;
   display: block;
   margin-bottom: 44px;
 
+  @include tablet {
+    width: 100%;
+    max-width: 330px;
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:last-child {
+      max-width: 690px;
+    }
+  }
+
   textarea {
     resize: none;
     height: 76px;
+    @include tablet {
+      max-width: 690px;
+    }
   }
 }
 .booking__input {
@@ -30,6 +57,10 @@
   outline: none;
   color: #ffffff;
   font-size: 14px;
+
+  @include tablet {
+    max-width: 330px;
+  }
 
   .booking__label:focus-within & {
     border-bottom: 1px solid #ffffff;
@@ -58,4 +89,7 @@
 }
 .booking__btn {
   @include text(12px, 16px);
+  @include tablet {
+    margin-left: 0;
+  }
 }

@@ -11,11 +11,31 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <a href="" class="logo">
-          <svg class="logo__icon" width="69" height="55">
-            <use href="./img/icons.svg#logo"></use>
-          </svg>
-        </a>
+        <aside class="header__sidebar">
+          <a href="" class="logo">
+            <svg class="logo__icon" width="69" height="55">
+              <use href="./img/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="header-soc">
+            <li class="header-soc__item"><a href="" class="header-soc__link">Instagram</a></li>
+            <li class="header-soc__item"><a href="" class="header-soc__link">Youtube</a></li>
+          </ul>
+        </aside>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="" class="header__link">О нас</a></li>
+              <li class="header__item"><a href="" class="header__link">Услуги и цены</a></li>
+              <li class="header__item"><a href="" class="header__link">Мастера</a></li>
+              <li class="header__item"><a href="" class="header__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__holder">
+            <a href="tel:+380441111111" class="header__connect">+38 044 111 1 1 11</a>
+            <button class="btn--dark header__booking" type="button">онлайн-запись</button>
+          </div>
+        </div>
 
         <div class="mobile" data-menu>
           <div class="mobile__front">
@@ -43,12 +63,14 @@
                 <use href="./img/icons.svg#cross"></use>
               </svg>
             </button>
-            <ul class="mobile__list">
-              <li class="mobile__item"><a href="" class="mobile__link">О нас</a></li>
-              <li class="mobile__item"><a href="" class="mobile__link">Услуги и цены</a></li>
-              <li class="mobile__item"><a href="" class="mobile__link">Мастера</a></li>
-              <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
-            </ul>
+            <nav>
+              <ul class="mobile__list">
+                <li class="mobile__item"><a href="" class="mobile__link">О нас</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">Услуги и цены</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">Мастера</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+              </ul>
+            </nav>
             <a href="tel:+380441111111" class="mobile__connect">+38 044 111 1 1 11</a>
             <button class="btn mobile__booking" type="button">онлайн-запись</button>
             <ul class="mobile__soc mob-soc">
@@ -61,31 +83,89 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <p lang="en" class="hero__top-text top-text">A hair salon for men in Kyiv</p>
-        <h1 lang="en" class="hero__title title">BarberShop</h1>
-        <p class="hero__text text">
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-        </p>
-      </div>
-    </section>
+    <div class="wrapper">
+      <section class="hero">
+        <div class="container">
+          <p lang="en" class="hero__top-text top-text">A hair salon for men in Kyiv</p>
+          <h1 lang="en" class="hero__title title">BarberShop</h1>
+          <p class="hero__text text">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+          </p>
+          <ul class="hero__list">
+            <li class="hero__item"><a href="" class="hero__link">Назад</a></li>
+            <li class="hero__item"><a href="" class="hero__link">Вперед</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <!-- ABOUT -->
     <section class="about section">
       <div class="container">
-        <p class="top-text--dark about__top-text">О НАС</p>
-        <h2 class="title--dark about__title">Лучший Барбершоп твоего города</h2>
-        <p class="text--dark about__pre-text">
-          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-        </p>
-        <p class="text--dark about__text">
-          Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
-          попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
-          которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
-          каждого, кто к нам приходит!
-        </p>
-        <button type="button" class="btn about__btn" data-modal-open>онлайн-запись</button>
+        <div class="about__holder">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/about-img/img1-990.webp 990w,
+                    ./img/about-img/img1-660.webp 660w,
+                    ./img/about-img/img1-330.webp 330w
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  srcset="
+                    ./img/about-img/img1-990.jpg,
+                    ./img/about-img/img1-660.jpg,
+                    ./img/about-img/img1-330.jpg
+                  "
+                  src="./img/about-img/img1-330.jpg"
+                  alt="Барбер бреет бороду"
+                  class="about__img"
+                  sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw"
+                />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/about-img/img2-990.webp 990w,
+                    ./img/about-img/img2-660.webp 660w,
+                    ./img/about-img/img2-330.webp 330w
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  srcset="
+                    ./img/about-img/img2-990.jpg,
+                    ./img/about-img/img2-660.jpg,
+                    ./img/about-img/img2-330.jpg
+                  "
+                  src="./img/about-img/img2-330.jpg"
+                  alt="Барбер бреет затылок"
+                  class="about__img"
+                  sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about__desc">
+            <p class="top-text--dark about__top-text">О НАС</p>
+            <h2 class="title--dark about__title">Лучший Барбершоп твоего города</h2>
+            <p class="text--dark about__pre-text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="text--dark about__text">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button type="button" class="btn about__btn" data-modal-open>онлайн-запись</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -174,20 +254,36 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master1-tab-1350.webp 1350w,
+                  ./img/masters/master1-tab-900.webp   900w,
+                  ./img/masters/master1-tab-450.webp   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master1-tab-1350.jpg 1350w,
+                  ./img/masters/master1-tab-900.jpg   900w,
+                  ./img/masters/master1-tab-450.jpg   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master1-mob-1254.webp 1254w,
                   ./img/masters/master1-mob-836.webp   836w,
                   ./img/masters/master1-mob-418.webp,
                   418w
                 "
-                media="(max-width:480px)"
               />
-
               <img
+                class="masters__img"
                 srcset="
                   ./img/masters/master1-mob-1254.jpg 1254w,
                   ./img/masters/master1-mob-836.jpg   836w,
                   ./img/masters/master1-mob-418.jpg   418w
                 "
+                media="(max-width:480px)"
                 sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 src="./img/masters/master1-mob-418.jpg"
                 alt="Барбер стрижет клиента"
@@ -233,15 +329,30 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master2-tab-1350.webp 1350w,
+                  ./img/masters/master2-tab-900.webp   900w,
+                  ./img/masters/master2-tab-450.webp   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master2-tab-1350.jpg 1350w,
+                  ./img/masters/master2-tab-900.jpg   900w,
+                  ./img/masters/master2-tab-450.jpg   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master2-mob-1254.webp 1254w,
                   ./img/masters/master2-mob-836.webp   836w,
                   ./img/masters/master2-mob-418.webp,
                   418w
                 "
-                media="(max-width:480px)"
               />
-
               <img
+                class="masters__img"
                 srcset="
                   ./img/masters/master2-mob-1254.jpg 1254w,
                   ./img/masters/master2-mob-836.jpg   836w,
@@ -292,15 +403,31 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master3-tab-1350.webp 1350w,
+                  ./img/masters/master3-tab-900.webp   900w,
+                  ./img/masters/master3-tab-450.webp   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master3-tab-1350.jpg 1350w,
+                  ./img/masters/master3-tab-900.jpg   900w,
+                  ./img/masters/master3-tab-450.jpg   450w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master3-mob-1254.webp 1254w,
                   ./img/masters/master3-mob-836.webp   836w,
                   ./img/masters/master3-mob-418.webp,
                   418w
                 "
-                media="(max-width:480px)"
               />
 
               <img
+                class="masters__img"
                 srcset="
                   ./img/masters/master3-mob-1254.jpg 1254w,
                   ./img/masters/master3-mob-836.jpg   836w,
@@ -359,11 +486,26 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-tab1-990.webp 990w,
+                  ./img/gallery/gallery-tab1-660.webp 660w,
+                  ./img/gallery/gallery-tab1-330.webp 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-tab1-990.jpg 990w,
+                  ./img/gallery/gallery-tab1-660.jpg 660w,
+                  ./img/gallery/gallery-tab1-330.jpg 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-mob-1-1254.webp 1254w,
                   ./img/gallery/gallery-mob-1-836.webp   836w,
                   ./img/gallery/gallery-mob-1-418.webp   418w
                 "
-                media="(max-width:480px)"
               />
 
               <img
@@ -382,11 +524,26 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-tab2-990.webp 990w,
+                  ./img/gallery/gallery-tab2-660.webp 660w,
+                  ./img/gallery/gallery-tab2-330.webp 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-tab2-990.jpg 990w,
+                  ./img/gallery/gallery-tab2-660.jpg 660w,
+                  ./img/gallery/gallery-tab2-330.jpg 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-mob-2-1254.webp 1254w,
                   ./img/gallery/gallery-mob-2-836.webp   836w,
                   ./img/gallery/gallery-mob-2-418.webp   418w
                 "
-                media="(max-width:480px)"
               />
 
               <img
@@ -405,11 +562,26 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-tab3-990.webp 990w,
+                  ./img/gallery/gallery-tab3-660.webp 660w,
+                  ./img/gallery/gallery-tab3-330.webp 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-tab3-990.jpg 990w,
+                  ./img/gallery/gallery-tab3-660.jpg 660w,
+                  ./img/gallery/gallery-tab3-330.jpg 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-mob-3-1254.webp 1254w,
                   ./img/gallery/gallery-mob-3-836.webp   836w,
                   ./img/gallery/gallery-mob-3-418.webp   418w
                 "
-                media="(max-width:480px)"
               />
 
               <img
@@ -428,11 +600,27 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-tab4-990.webp 990w,
+                  ./img/gallery/gallery-tab4-660.webp 660w,
+                  ./img/gallery/gallery-tab4-330.webp 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-tab4-990.jpg 990w,
+                  ./img/gallery/gallery-tab4-660.jpg 660w,
+                  ./img/gallery/gallery-tab4-330.jpg 330w
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-mob-4-1254.webp 1254w,
                   ./img/gallery/gallery-mob-4-836.webp   836w,
                   ./img/gallery/gallery-mob-4-418.webp   418w
                 "
-                media="(max-width:480px)"
+                media="(max-width:767px)"
               />
 
               <img
@@ -458,14 +646,16 @@
         <div class="container">
           <h2 class="title booking__title">Онлайн-запись</h2>
           <form class="booking__form">
-            <label class="booking__label">
-              <input class="booking__input" type="text" name="name" placeholder=" " required />
-              <span class="booking__text">Имя</span>
-            </label>
-            <label class="booking__label">
-              <input class="booking__input" type="tel" name="name" placeholder=" " required />
-              <span class="booking__text">Телефон</span>
-            </label>
+            <div class="booking__wrap">
+              <label class="booking__label">
+                <input class="booking__input" type="text" name="name" placeholder=" " required />
+                <span class="booking__text">Имя</span>
+              </label>
+              <label class="booking__label">
+                <input class="booking__input" type="tel" name="name" placeholder=" " required />
+                <span class="booking__text">Телефон</span>
+              </label>
+            </div>
             <label class="booking__label">
               <textarea class="booking__input" name="message" placeholder=" "></textarea>
               <span class="booking__text">сообщение</span>
@@ -479,36 +669,40 @@
       <section class="contacts section">
         <div class="container">
           <h2 class="title contacts__title">Контакты</h2>
-          <address class="contacts__address">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a class="contacts__link text" href=""
-                  ><svg class="contacts__icon" width="24" height="24">
-                    <use href="./img/icons.svg#map"></use>
-                  </svg>
-                  ул. Васильковая, 7А, Киев, 08132</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link text" href="tel:+380441111111"
-                  ><svg class="contacts__icon" width="24" height="24">
-                    <use href="./img/icons.svg#phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link text" href="mailto:barbershop@email.com"
-                  ><svg class="contacts__icon" width="24" height="24">
-                    <use href="./img/icons.svg#mail"></use>
-                  </svg>
-                  barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="top-text contacts__top-text">время работы</p>
-          <p class="text contacts__text">Ежедневно с 9:00 до 22:00</p>
+          <div class="contacts__wrap">
+            <address class="contacts__address">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link text" href=""
+                    ><svg class="contacts__icon" width="24" height="24">
+                      <use href="./img/icons.svg#map"></use>
+                    </svg>
+                    ул. Васильковая, 7А, Киев, 08132</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link text" href="tel:+380441111111"
+                    ><svg class="contacts__icon" width="24" height="24">
+                      <use href="./img/icons.svg#phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link text" href="mailto:barbershop@email.com"
+                    ><svg class="contacts__icon" width="24" height="24">
+                      <use href="./img/icons.svg#mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="contacts__details">
+              <p class="top-text contacts__top-text">время работы</p>
+              <p class="text contacts__text">Ежедневно с 9:00 до 22:00</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -547,7 +741,7 @@
             <span class="modal__text">Почта</span>
           </label>
           <label class="modal__label">
-            <textarea name="comment" placeholder=" "></textarea>
+            <textarea class="modal__input" name="comment" placeholder=" "></textarea>
             <span class="modal__text">Комментарий</span>
           </label>
         </form>

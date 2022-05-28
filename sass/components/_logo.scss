@@ -1,0 +1,13 @@
+.logo {
+  &__icon {
+    fill: #ffffff;
+  }
+
+  @include tablet {
+    display: block;
+
+    .logo__icon {
+      fill: #303030;
+    }
+  }
+}
