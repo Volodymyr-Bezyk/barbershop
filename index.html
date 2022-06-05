@@ -11,17 +11,11 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <aside class="header__sidebar">
-          <a href="" class="logo">
-            <svg class="logo__icon" width="69" height="55">
-              <use href="./img/icons.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="header-soc">
-            <li class="header-soc__item"><a href="" class="header-soc__link">Instagram</a></li>
-            <li class="header-soc__item"><a href="" class="header-soc__link">Youtube</a></li>
-          </ul>
-        </aside>
+        <a href="" class="logo">
+          <svg class="logo__icon" width="69" height="55">
+            <use href="./img/icons.svg#logo"></use>
+          </svg>
+        </a>
         <div class="header__menu">
           <nav class="header__nav">
             <ul class="header__list">
@@ -43,7 +37,6 @@
               type="button"
               class="mobile-btn"
               aria-label="Открытие мобильного меню"
-              aria-controls="menu"
               data-menu-open
             >
               <svg class="mobile__icon" width="40" height="40">
@@ -56,7 +49,6 @@
               type="button"
               class="mobile-btn--back"
               aria-label="Закрытие мобильного меню"
-              aria-controls="menu-close"
               data-menu-close
             >
               <svg class="mobile__icon" width="40" height="40">
@@ -83,11 +75,31 @@
     </header>
 
     <!-- HERO -->
-    <div class="wrapper">
-      <section class="hero">
-        <div class="container">
+    <section class="hero">
+      <div class="container">
+        <aside class="hero__sidebar">
+          <a href="" class="logo">
+            <svg class="logo__icon" width="69" height="55">
+              <use href="./img/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="hero-soc">
+            <li class="hero-soc__item"><a href="" class="hero-soc__link">Instagram</a></li>
+            <li class="hero-soc__item"><a href="" class="hero-soc__link">Youtube</a></li>
+          </ul>
+        </aside>
+        <div class="hero__holder">
           <p lang="en" class="hero__top-text top-text">A hair salon for men in Kyiv</p>
-          <h1 lang="en" class="hero__title title">BarberShop</h1>
+          <div class="hero__wrap">
+            <h1 lang="en" class="hero__title title">BarberShop</h1>
+            <ul class="hero__top-list">
+              <li class="hero__top-item">
+                <a href="" class="hero__top-link hero__top-link--active"></a>
+              </li>
+              <li class="hero__top-item"><a href="" class="hero__top-link"></a></li>
+              <li class="hero__top-item"><a href="" class="hero__top-link"></a></li>
+            </ul>
+          </div>
           <p class="hero__text text">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
           </p>
@@ -96,8 +108,8 @@
             <li class="hero__item"><a href="" class="hero__link">Вперед</a></li>
           </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- ABOUT -->
     <section class="about section">
@@ -108,17 +120,36 @@
               <picture>
                 <source
                   srcset="
+                    ./img/about-img/img1-810.webp 810w,
+                    ./img/about-img/img1-540.webp 540w,
+                    ./img/about-img/img1-270.webp 270w
+                  "
+                  sizes="(min-width:1250px) 25vw"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/about-img/img1-810.jpg 810w,
+                    ./img/about-img/img1-540.jpg 540w,
+                    ./img/about-img/img1-270.jpg 270w
+                  "
+                  sizes="(min-width:1250px) 25vw"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
                     ./img/about-img/img1-990.webp 990w,
                     ./img/about-img/img1-660.webp 660w,
                     ./img/about-img/img1-330.webp 330w
                   "
+                  sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw"
                   media="(min-width:768px)"
                 />
                 <img
                   srcset="
-                    ./img/about-img/img1-990.jpg,
-                    ./img/about-img/img1-660.jpg,
-                    ./img/about-img/img1-330.jpg
+                    ./img/about-img/img1-990.jpg 990w,
+                    ./img/about-img/img1-660.jpg 660w,
+                    ./img/about-img/img1-330.jpg 330w
                   "
                   src="./img/about-img/img1-330.jpg"
                   alt="Барбер бреет бороду"
@@ -131,17 +162,36 @@
               <picture>
                 <source
                   srcset="
+                    ./img/about-img/img2-810.webp 810w,
+                    ./img/about-img/img2-540.webp 540w,
+                    ./img/about-img/img2-270.webp 270w
+                  "
+                  sizes="(min-width:1250px) 25vw"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
+                    ./img/about-img/img2-810.jpg 810w,
+                    ./img/about-img/img2-540.jpg 540w,
+                    ./img/about-img/img2-270.jpg 270w
+                  "
+                  sizes="(min-width:1250px) 25vw"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="
                     ./img/about-img/img2-990.webp 990w,
                     ./img/about-img/img2-660.webp 660w,
                     ./img/about-img/img2-330.webp 330w
                   "
+                  sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw"
                   media="(min-width:768px)"
                 />
                 <img
                   srcset="
-                    ./img/about-img/img2-990.jpg,
-                    ./img/about-img/img2-660.jpg,
-                    ./img/about-img/img2-330.jpg
+                    ./img/about-img/img2-990.jpg 990w,
+                    ./img/about-img/img2-660.jpg 660w,
+                    ./img/about-img/img2-330.jpg 330w
                   "
                   src="./img/about-img/img2-330.jpg"
                   alt="Барбер бреет затылок"
@@ -174,42 +224,44 @@
       <div class="container">
         <p class="top-text prices__top-text">Проведи время в компании лучших мастеров</p>
         <h2 class="title prices__title">Услуги и цены</h2>
-
-        <ul class="prices__list list-price">
-          <li class="list-price__item text">
-            <span class="list-price__name">Мужская стрижка</span
-            ><span class="list-price__value">от 300 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Стрижка бороды</span
-            ><span class="list-price__value">от 200 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Стрижка усов</span
-            ><span class="list-price__value">от 200 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Бритье опасной бритвой</span
-            ><span class="list-price__value">от 200 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Cтрижка у стажера</span
-            ><span class="list-price__value">от 50 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Стрижка под насадку</span
-            ><span class="list-price__value">от 200 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Детская стрижка (до 12 лет)</span
-            ><span class="list-price__value">от 300 грн.</span>
-          </li>
-          <li class="list-price__item text">
-            <span class="list-price__name">Камуфлирование седины</span
-            ><span class="list-price__value">от 200 грн.</span>
-          </li>
-        </ul>
-
+        <div class="about__inner">
+          <ul class="prices__list list-price">
+            <li class="list-price__item text">
+              <span class="list-price__name">Мужская стрижка</span
+              ><span class="list-price__value">от 300 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Стрижка бороды</span
+              ><span class="list-price__value">от 200 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Стрижка усов</span
+              ><span class="list-price__value">от 200 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Бритье опасной бритвой</span
+              ><span class="list-price__value">от 200 грн.</span>
+            </li>
+          </ul>
+          <ul class="prices__list list-price">
+            <li class="list-price__item text">
+              <span class="list-price__name">Cтрижка у стажера</span
+              ><span class="list-price__value">от 50 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Стрижка под насадку</span
+              ><span class="list-price__value">от 200 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Детская стрижка (до 12 лет)</span
+              ><span class="list-price__value">от 300 грн.</span>
+            </li>
+            <li class="list-price__item text">
+              <span class="list-price__name">Камуфлирование седины</span
+              ><span class="list-price__value">от 200 грн.</span>
+            </li>
+          </ul>
+        </div>
         <button type="button" class="btn--dark prices__btn">онлайн-запись</button>
       </div>
     </section>
@@ -217,12 +269,14 @@
     <!-- FEATURES -->
     <section class="features section">
       <div class="container">
-        <p class="top-text--dark features__top-text">старая традиционная школа</p>
-        <h2 class="title--dark features__title">Почему приходят именно к нам?</h2>
-        <p class="text--dark features__text">
-          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
-          прочитать.
-        </p>
+        <div class="features__inner">
+          <p class="top-text--dark features__top-text">старая традиционная школа</p>
+          <h2 class="title--dark features__title">Почему приходят именно к нам?</h2>
+          <p class="text--dark features__text">
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
+            прочитать.
+          </p>
+        </div>
         <ul class="features__list achievement__list">
           <li class="achievement__item">
             <b class="achievement__value">600</b>
@@ -254,10 +308,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master1-desk-1110.webp 1110w,
+                  ./img/masters/master1-desk-740.webp   740w,
+                  ./img/masters/master1-desk-370.webp   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master1-desk-1110.jpg 1110w,
+                  ./img/masters/master1-desk-740.jpg   740w,
+                  ./img/masters/master1-desk-370.jpg   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master1-tab-1350.webp 1350w,
                   ./img/masters/master1-tab-900.webp   900w,
                   ./img/masters/master1-tab-450.webp   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -266,15 +339,17 @@
                   ./img/masters/master1-tab-900.jpg   900w,
                   ./img/masters/master1-tab-450.jpg   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
                 srcset="
                   ./img/masters/master1-mob-1254.webp 1254w,
                   ./img/masters/master1-mob-836.webp   836w,
-                  ./img/masters/master1-mob-418.webp,
-                  418w
+                  ./img/masters/master1-mob-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
               <img
                 class="masters__img"
@@ -283,7 +358,6 @@
                   ./img/masters/master1-mob-836.jpg   836w,
                   ./img/masters/master1-mob-418.jpg   418w
                 "
-                media="(max-width:480px)"
                 sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 src="./img/masters/master1-mob-418.jpg"
                 alt="Барбер стрижет клиента"
@@ -329,10 +403,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master2-desk-1110.webp 1110w,
+                  ./img/masters/master2-desk-740.webp   740w,
+                  ./img/masters/master2-desk-370.webp   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master2-desk-1110.jpg 1110w,
+                  ./img/masters/master2-desk-740.jpg   740w,
+                  ./img/masters/master2-desk-370.jpg   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master2-tab-1350.webp 1350w,
                   ./img/masters/master2-tab-900.webp   900w,
                   ./img/masters/master2-tab-450.webp   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -341,15 +434,17 @@
                   ./img/masters/master2-tab-900.jpg   900w,
                   ./img/masters/master2-tab-450.jpg   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
                 srcset="
                   ./img/masters/master2-mob-1254.webp 1254w,
                   ./img/masters/master2-mob-836.webp   836w,
-                  ./img/masters/master2-mob-418.webp,
-                  418w
+                  ./img/masters/master2-mob-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
               <img
                 class="masters__img"
@@ -403,10 +498,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/masters/master3-desk-1110.webp 1110w,
+                  ./img/masters/master3-desk-740.webp   740w,
+                  ./img/masters/master3-desk-370.webp   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/masters/master3-desk-1110.jpg 1110w,
+                  ./img/masters/master3-desk-740.jpg   740w,
+                  ./img/masters/master3-desk-370.jpg   370w
+                "
+                sizes="(min-width:1280px) 33vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/masters/master3-tab-1350.webp 1350w,
                   ./img/masters/master3-tab-900.webp   900w,
                   ./img/masters/master3-tab-450.webp   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -415,15 +529,17 @@
                   ./img/masters/master3-tab-900.jpg   900w,
                   ./img/masters/master3-tab-450.jpg   450w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
                 srcset="
                   ./img/masters/master3-mob-1254.webp 1254w,
                   ./img/masters/master3-mob-836.webp   836w,
-                  ./img/masters/master3-mob-418.webp,
-                  418w
+                  ./img/masters/master3-mob-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
 
               <img
@@ -480,16 +596,36 @@
     <!-- GALLERY -->
     <section class="gallery section">
       <div class="container">
+        <h2 class="visually-hidden">Галерея работ</h2>
         <p class="gallery__top-text top-text--dark">На латинском языке “барба” означает “борода”</p>
         <ul class="gallery__list">
           <li class="gallery__item">
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-desk-1-810.webp 810w,
+                  ./img/gallery/gallery-desk-1-540.webp 540w,
+                  ./img/gallery/gallery-desk-1-270.webp 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-desk-1-810.jpg 810w,
+                  ./img/gallery/gallery-desk-1-540.jpg 540w,
+                  ./img/gallery/gallery-desk-1-270.jpg 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-tab1-990.webp 990w,
                   ./img/gallery/gallery-tab1-660.webp 660w,
                   ./img/gallery/gallery-tab1-330.webp 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -498,6 +634,7 @@
                   ./img/gallery/gallery-tab1-660.jpg 660w,
                   ./img/gallery/gallery-tab1-330.jpg 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -506,6 +643,8 @@
                   ./img/gallery/gallery-mob-1-836.webp   836w,
                   ./img/gallery/gallery-mob-1-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
 
               <img
@@ -524,10 +663,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-desk-2-810.webp 810w,
+                  ./img/gallery/gallery-desk-2-540.webp 540w,
+                  ./img/gallery/gallery-desk-2-270.webp 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-desk-2-810.jpg 810w,
+                  ./img/gallery/gallery-desk-2-540.jpg 540w,
+                  ./img/gallery/gallery-desk-2-270.jpg 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-tab2-990.webp 990w,
                   ./img/gallery/gallery-tab2-660.webp 660w,
                   ./img/gallery/gallery-tab2-330.webp 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -536,6 +694,7 @@
                   ./img/gallery/gallery-tab2-660.jpg 660w,
                   ./img/gallery/gallery-tab2-330.jpg 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -544,6 +703,8 @@
                   ./img/gallery/gallery-mob-2-836.webp   836w,
                   ./img/gallery/gallery-mob-2-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
 
               <img
@@ -562,10 +723,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-desk-3-810.webp 810w,
+                  ./img/gallery/gallery-desk-3-540.webp 540w,
+                  ./img/gallery/gallery-desk-3-270.webp 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-desk-3-810.jpg 810w,
+                  ./img/gallery/gallery-desk-3-540.jpg 540w,
+                  ./img/gallery/gallery-desk-3-270.jpg 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-tab3-990.webp 990w,
                   ./img/gallery/gallery-tab3-660.webp 660w,
                   ./img/gallery/gallery-tab3-330.webp 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -574,6 +754,7 @@
                   ./img/gallery/gallery-tab3-660.jpg 660w,
                   ./img/gallery/gallery-tab3-330.jpg 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -582,6 +763,8 @@
                   ./img/gallery/gallery-mob-3-836.webp   836w,
                   ./img/gallery/gallery-mob-3-418.webp   418w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
 
               <img
@@ -600,10 +783,29 @@
             <picture>
               <source
                 srcset="
+                  ./img/gallery/gallery-desk-4-810.webp 810w,
+                  ./img/gallery/gallery-desk-4-540.webp 540w,
+                  ./img/gallery/gallery-desk-4-270.webp 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-desk-4-810.jpg 810w,
+                  ./img/gallery/gallery-desk-4-540.jpg 540w,
+                  ./img/gallery/gallery-desk-4-270.jpg 270w
+                "
+                sizes="(min-width:1280px) 25vw"
+                media="(min-width:1280px)"
+              />
+              <source
+                srcset="
                   ./img/gallery/gallery-tab4-990.webp 990w,
                   ./img/gallery/gallery-tab4-660.webp 660w,
                   ./img/gallery/gallery-tab4-330.webp 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -612,6 +814,7 @@
                   ./img/gallery/gallery-tab4-660.jpg 660w,
                   ./img/gallery/gallery-tab4-330.jpg 330w
                 "
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
                 media="(min-width:768px)"
               />
               <source
@@ -620,7 +823,8 @@
                   ./img/gallery/gallery-mob-4-836.webp   836w,
                   ./img/gallery/gallery-mob-4-418.webp   418w
                 "
-                media="(max-width:767px)"
+                sizes="(min-width:1280px) 33vw, (min-width:768px) 60vw, 100vw"
+                type="image/webp"
               />
 
               <img
@@ -641,79 +845,82 @@
 
     <!-- FOOTER -->
     <footer>
-      <!-- BOOKING -->
-      <section class="booking section">
-        <div class="container">
-          <h2 class="title booking__title">Онлайн-запись</h2>
-          <form class="booking__form">
-            <div class="booking__wrap">
+      <div class="footer__wrap">
+        <!-- BOOKING -->
+        <section class="booking section">
+          <div class="container">
+            <h2 class="title booking__title">Онлайн-запись</h2>
+            <form class="booking__form">
+              <div class="booking__wrap">
+                <label class="booking__label">
+                  <input class="booking__input" type="text" name="name" placeholder=" " required />
+                  <span class="booking__text">Имя</span>
+                </label>
+                <label class="booking__label">
+                  <input class="booking__input" type="tel" name="name" placeholder=" " required />
+                  <span class="booking__text">Телефон</span>
+                </label>
+              </div>
               <label class="booking__label">
-                <input class="booking__input" type="text" name="name" placeholder=" " required />
-                <span class="booking__text">Имя</span>
+                <textarea class="booking__input" name="message" placeholder=" "></textarea>
+                <span class="booking__text">сообщение</span>
               </label>
-              <label class="booking__label">
-                <input class="booking__input" type="tel" name="name" placeholder=" " required />
-                <span class="booking__text">Телефон</span>
-              </label>
-            </div>
-            <label class="booking__label">
-              <textarea class="booking__input" name="message" placeholder=" "></textarea>
-              <span class="booking__text">сообщение</span>
-            </label>
-          </form>
-          <button class="btn--dark booking__btn" type="submit">отправить</button>
-        </div>
-      </section>
+            </form>
+            <button class="btn--dark booking__btn" type="submit">отправить</button>
+          </div>
+        </section>
 
-      <!-- CONTACTS -->
-      <section class="contacts section">
-        <div class="container">
-          <h2 class="title contacts__title">Контакты</h2>
-          <div class="contacts__wrap">
-            <address class="contacts__address">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contacts__link text" href=""
-                    ><svg class="contacts__icon" width="24" height="24">
-                      <use href="./img/icons.svg#map"></use>
-                    </svg>
-                    ул. Васильковая, 7А, Киев, 08132</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link text" href="tel:+380441111111"
-                    ><svg class="contacts__icon" width="24" height="24">
-                      <use href="./img/icons.svg#phone"></use>
-                    </svg>
-                    +38 044 111 11 11</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link text" href="mailto:barbershop@email.com"
-                    ><svg class="contacts__icon" width="24" height="24">
-                      <use href="./img/icons.svg#mail"></use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-            <div class="contacts__details">
-              <p class="top-text contacts__top-text">время работы</p>
-              <p class="text contacts__text">Ежедневно с 9:00 до 22:00</p>
+        <!-- CONTACTS -->
+        <section class="contacts section">
+          <div class="container">
+            <h2 class="title contacts__title">Контакты</h2>
+            <div class="contacts__wrap">
+              <address class="contacts__address">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a class="contacts__link text" href=""
+                      ><svg class="contacts__icon" width="24" height="24">
+                        <use href="./img/icons.svg#map"></use>
+                      </svg>
+                      ул. Васильковая, 7А, Киев, 08132</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link text" href="tel:+380441111111"
+                      ><svg class="contacts__icon" width="24" height="24">
+                        <use href="./img/icons.svg#phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link text" href="mailto:barbershop@email.com"
+                      ><svg class="contacts__icon" width="24" height="24">
+                        <use href="./img/icons.svg#mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts__details">
+                <p class="top-text contacts__top-text">время работы</p>
+                <p class="text contacts__text">Ежедневно с 9:00 до 22:00</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- FOOTER-SOC -->
       <section class="footer-soc">
         <div class="container">
+          <h2 class="visually-hidden">Свяжитесь с нами</h2>
           <ul class="footer-soc__list">
             <li class="footer-soc__item"><a href="" class="footer-soc__link">Instagram</a></li>
             <li class="footer-soc__item"><a href="" class="footer-soc__link">Youtube</a></li>
           </ul>
-          <p class="footer-soc__text">&copy Copyright 2020</p>
+          <p class="footer-soc__text">&copy;Copyright 2020</p>
         </div>
       </section>
     </footer>
@@ -750,10 +957,10 @@
           <span class="policy__check">
             <span class="policy__sign"></span>
           </span>
-          <p class="policy__text">
+          <span class="policy__text">
             Соглашаюсь получать новости согласно
             <a href="" class="policy__link">Условий договора</a>
-          </p>
+          </span>
         </label>
         <button class="btn modal__btn" type="submit">Записаться</button>
       </div>

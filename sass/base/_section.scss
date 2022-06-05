@@ -6,4 +6,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }

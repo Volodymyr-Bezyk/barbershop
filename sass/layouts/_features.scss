@@ -1,3 +1,17 @@
+.features {
+  .container {
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+.features__inner {
+  @include desktop {
+    margin-left: 130px;
+  }
+}
+
 .features__top-text {
   @include text(11px, 15px);
   margin-bottom: 20px;

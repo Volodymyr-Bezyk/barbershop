@@ -1,6 +1,8 @@
 .mobile.is-rotate {
+  overflow: auto;
   .mobile__front {
     transform: rotateY(180deg);
+    overflow: hidden;
   }
   .mobile__back {
     transform: rotateY(0);

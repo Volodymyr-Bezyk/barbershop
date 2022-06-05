@@ -8,11 +8,11 @@
   }
 
   &::before {
-    @include line(#303030);
+    @include line(#303030, 20px, 60px, 10px);
     margin-top: 10px;
 
     @include tablet {
-      @include line(null, null, null, 7px);
+      @include line(null, null, null, 7px, null);
     }
   }
 }
@@ -32,5 +32,8 @@
   @include tablet {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }

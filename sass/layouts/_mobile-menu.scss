@@ -6,7 +6,7 @@
   width: 70vw;
   max-width: 347px;
   transform-style: preserve-3d;
-  overflow: auto;
+  perspective: 500px;
 
   @include tablet {
     display: none;
@@ -17,6 +17,7 @@
     top: 0;
     right: 0;
     height: auto;
+    // overflow: hidden;
     width: 70vw;
     max-width: 347px;
     padding-top: 48px;

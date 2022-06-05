@@ -1,10 +1,27 @@
+.booking.section {
+  @include desktop {
+    padding-bottom: 193px;
+  }
+}
 .booking {
   margin: 0 auto;
   max-width: 480px;
+  width: 100%;
   background-color: #191c26;
 
   @include tablet {
     max-width: 768px;
+  }
+  @include desktop {
+    margin: 0;
+    max-width: 655px;
+  }
+
+  .container {
+    @include desktop {
+      padding-right: 40px;
+      padding-left: 57;
+    }
   }
 }
 .booking__title {
@@ -29,11 +46,16 @@
   @include tablet {
     width: 100%;
     max-width: 330px;
-    &:first-child {
+    .booking__wrap &:first-child {
       margin-right: 30px;
     }
-    &:last-child {
-      max-width: 690px;
+  }
+  @include desktop {
+    .booking__wrap &:first-child {
+      max-width: 270px;
+    }
+    .booking__wrap &:last-child {
+      max-width: 260px;
     }
   }
 
@@ -43,6 +65,17 @@
     @include tablet {
       max-width: 690px;
     }
+    @include desktop {
+      max-width: 560px;
+    }
+  }
+}
+.booking__wrap + .booking__label {
+  @include tablet {
+    max-width: 690px;
+  }
+  @include desktop {
+    max-width: 560px;
   }
 }
 .booking__input {
@@ -60,6 +93,9 @@
 
   @include tablet {
     max-width: 330px;
+  }
+  @include desktop {
+    width: 100%;
   }
 
   .booking__label:focus-within & {

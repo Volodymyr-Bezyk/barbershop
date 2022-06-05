@@ -5,4 +5,9 @@
     padding-left: 39px;
     padding-right: 39px;
   }
+  @include desktop {
+    max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 59px;
+  }
 }
