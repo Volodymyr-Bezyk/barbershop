@@ -1,13 +1,19 @@
 .logo {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999;
   &__icon {
     fill: #ffffff;
-  }
+    transition: fill 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-  @include tablet {
-    display: block;
-
-    .logo__icon {
+    @include tablet {
       fill: #303030;
+    }
+
+    .logo:hover &,
+    .logo:focus & {
+      fill: #ff6c00;
     }
   }
 }
